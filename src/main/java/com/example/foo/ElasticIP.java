@@ -1,10 +1,13 @@
+package com.example.foo;
+
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.Address;
 import com.amazonaws.services.ec2.model.DescribeAddressesResult;
 
-public class ElasticIP {
+class ElasticIP {
     public static void main(String arg[]){
+        System.out.println("Hello World");
         final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
         DescribeAddressesResult response = ec2.describeAddresses();
